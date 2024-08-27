@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrada de Dados</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles.css') }}">
+</head>
+<body>
+    <h1>Insira os Dados de Peso</h1>
+    <form method="post">
+        <label for="datas">Datas (formato: dd/mm/aa, separado por vírgula):</label><br>
+        <input type="text" name="datas" id="datas" required><br><br>
+
+        <label for="pesos">Pesos (separado por vírgula):</label><br>
+        <input type="text" name="pesos" id="pesos" required><br><br>
+
+        <input type="submit" value="Gerar Gráfico">
+    </form>
+</body>
+</html>
